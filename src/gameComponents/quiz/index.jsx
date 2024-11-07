@@ -17,9 +17,7 @@ function Quiz({quiz, isUserAnswerValidated, onValidation}) {
         shuffledAnswersRef.current = [...answers];
         shuffledAnswersRef.current.sort(()=> Math.random() - 0.5);
     }
-    /* const questionText = quiz.question.text;
-    const answers = [quiz.correctAnswer, ...quiz.incorrectAnswers]; */
- 
+
     return <>
         <h2 className={style.question}>{questionText}</h2>
         <div className={`selection flexColCenter`}>
@@ -51,16 +49,6 @@ function Quiz({quiz, isUserAnswerValidated, onValidation}) {
             onValidation={()=> {onValidation(userSelection)}}
             isBtnDisabled={isUserSelectionEmpty || isUserAnswerValidated}
         />
-
-        {/* <AnswersList
-            userSelection={userSelection}
-            answers={answers}
-            userSelection={userSelection}
-            isUserAnswerValidated={isUserAnswerValidated}
-            onSelection={setUserSelection}
-        /> */}
-        
-        
     </>
 }
 

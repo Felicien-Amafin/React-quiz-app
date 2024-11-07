@@ -31,12 +31,6 @@ function Game() {
         }, 3000)
     }, []);
 
- /*    const contextValue = {
-        quiz: questions[currentQuestionIndex], 
-        isUserAnswerValidated: isTimerStoped, 
-        onValidation: handleValidation
-    } */
-
     useEffect(()=> {
         const { topic, level } = formatDataToFetch(location.state.topic, location.state.level);
         
