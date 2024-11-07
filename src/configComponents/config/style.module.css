@@ -1,0 +1,18 @@
+.mainTitle { font-size: 30px; }
+
+.mainTitle span:nth-child(1) {
+    color: white;
+}
+
+.mainTitle span:nth-child(2) {
+    color: orange;
+}
+
+.configTitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 30px;
+    color: rgb(220, 220, 220);
+    font-weight: 400;
+}

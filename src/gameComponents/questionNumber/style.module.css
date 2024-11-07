@@ -1,0 +1,7 @@
+.questionNum span:nth-child(1){
+    color: white;
+}
+
+.questionNum span:nth-child(2){
+    color: orange;
+}
